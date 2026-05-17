@@ -20,6 +20,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;color:var(--tx);background:#eef2f7;
 .hbadge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:3px 10px;font-size:.67rem;white-space:nowrap;}
 .hbadge.gn{background:rgba(30,124,74,.4);border-color:#4caf7d;}
 .nbar{background:var(--ac);color:#fff;padding:5px 22px;font-size:.7rem;font-weight:600;display:flex;justify-content:space-between;}
+.lbar{background:#eaf2fb;border-bottom:1px solid #bdd4ea;padding:6px 22px;display:flex;gap:20px;align-items:center;font-size:.73rem;flex-wrap:wrap;}
+.lbar .lbl{color:var(--mu);font-size:.7rem;font-weight:700;}
+.lbar a{color:var(--pr);text-decoration:none;font-weight:600;transition:color .15s;display:flex;align-items:center;gap:4px;}
+.lbar a:hover{color:var(--ac);text-decoration:underline;}
 .nav{background:#0c2c44;border-bottom:2px solid var(--ac);}
 .navs{display:flex;overflow-x:auto;padding:0 8px;scrollbar-width:none;}
 .navs::-webkit-scrollbar{display:none;}
@@ -106,6 +110,13 @@ footer strong{color:#fff;}
     <span>📋 OFFICIAL NCISM MANDATORY DISCLOSURE PORTAL &nbsp;|&nbsp; Section 11 Compliance</span>
     <span id="ldate"></span>
   </div>
+  <div class="lbar">
+    <span class="lbl">🔗 Official Links:</span>
+    <a href="https://ncism.gov.in" target="_blank">🏛️ NCISM, New Delhi</a>
+    <a href="https://rguhs.ac.in" target="_blank">🎓 RGUHS, Bengaluru</a>
+    <a href="https://ayush.gov.in" target="_blank">🌿 Ministry of Ayush</a>
+    <a href="https://kea.kar.nic.in" target="_blank">📋 KEA Karnataka</a>
+  </div>
 </div>
 
 <!-- NAV -->
@@ -180,10 +191,10 @@ footer strong{color:#fff;}
   <div class="card"><h4>📁 Uploaded Documents</h4>
     <table class="dt">
       <tr><th>#</th><th>Document Name</th><th>Period / Ref</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td colspan="4" class="pending">⏳ Principal Bio-Data &amp; Appointment Letter — awaiting upload</td><td>—</td></tr>
-      <tr><td colspan="4" class="pending">⏳ Principal KAMC Registration Certificate — awaiting upload</td><td>—</td></tr>
-      <tr><td colspan="4" class="pending">⏳ Medical Superintendent Bio-Data — awaiting upload</td><td>—</td></tr>
-      <tr><td colspan="4" class="pending">⏳ Medical Superintendent Registration Certificate — awaiting upload</td><td>—</td></tr>
+      <tr><td>1</td><td>Principal — Bio-Data &amp; Details</td><td>Current</td><td>May 2025</td><td><a href="docs/administration/principal-biodata.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td colspan="4" class="pending">⏳ Principal — KAMC Registration Certificate — awaiting upload</td><td>—</td></tr>
+      <tr><td>2</td><td>Medical Superintendent — Bio-Data &amp; Details</td><td>Current</td><td>May 2025</td><td><a href="docs/administration/ms-biodata.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td colspan="4" class="pending">⏳ Medical Superintendent — Registration Certificate — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -285,8 +296,13 @@ footer strong{color:#fff;}
     <div class="guide">Upload to <code>docs/research/</code></div>
     <table class="dt">
       <tr><th>#</th><th>Document Name</th><th>Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td colspan="4" class="pending">⏳ Research Publications List 2024-25 — awaiting upload</td><td>—</td></tr>
-      <tr><td colspan="4" class="pending">⏳ Research Publications List 2023-24 — awaiting upload</td><td>—</td></tr>
+      <tr><td>1</td><td>COVID-19 Survey Analysis</td><td>SIJTCM · 2020</td><td>May 2025</td><td><a href="docs/research/kembhavi-2020-covid19-survey-analysis-sijtcm.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>2</td><td>Education Reforms in Ayurveda</td><td>JONAM · 2020</td><td>May 2025</td><td><a href="docs/research/kembhavi-2020-education-reforms-jonam.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>3</td><td>Rebooting the Ayurveda System</td><td>JBINO · 2020</td><td>May 2025</td><td><a href="docs/research/kembhavi-2020-reboot-ayurveda-system-jbino.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>4</td><td>Reinventing Ayurveda</td><td>JBINO · 2021</td><td>May 2025</td><td><a href="docs/research/kembhavi-2021-ayurveda-reinvent-jbino.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>5</td><td>Healthcare Trends</td><td>JPHAR · 2021</td><td>May 2025</td><td><a href="docs/research/kembhavi-2021-healthcare-trends-jphar.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>6</td><td>Public Healthcare System</td><td>ARMARC · 2021</td><td>May 2025</td><td><a href="docs/research/kembhavi-2021-public-healthcare-system-armarc.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>7</td><td>Surgical Training in Ayurveda</td><td>IRAS · 2021</td><td>May 2025</td><td><a href="docs/research/kembhavi-2021-surgical-training-iras.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
     </table>
   </div>
 </div>
