@@ -7,8 +7,6 @@
 :root{--pr:#1a4a6b;--ac:#c8860a;--li:#f4f8fb;--bd:#d0dde8;--tx:#1e2d3d;--mu:#5a7a93;--gn:#1e7c4a;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Segoe UI',Arial,sans-serif;color:var(--tx);background:#eef2f7;font-size:14px;}
-
-/* HEADER */
 .hdr{background:linear-gradient(135deg,#1a4a6b,#0c2c44);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.3);}
 .htop{display:flex;align-items:flex-start;gap:14px;padding:14px 22px 10px;}
 .logo{width:70px;height:70px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;border:3px solid var(--ac);margin-top:2px;}
@@ -22,8 +20,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;color:var(--tx);background:#eef2f7;
 .hbadge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:3px 10px;font-size:.67rem;white-space:nowrap;}
 .hbadge.gn{background:rgba(30,124,74,.4);border-color:#4caf7d;}
 .nbar{background:var(--ac);color:#fff;padding:5px 22px;font-size:.7rem;font-weight:600;display:flex;justify-content:space-between;}
-
-/* NAV */
 .nav{background:#0c2c44;border-bottom:2px solid var(--ac);}
 .navs{display:flex;overflow-x:auto;padding:0 8px;scrollbar-width:none;}
 .navs::-webkit-scrollbar{display:none;}
@@ -32,26 +28,17 @@ body{font-family:'Segoe UI',Arial,sans-serif;color:var(--tx);background:#eef2f7;
 .nb.active{color:var(--ac);border-bottom-color:var(--ac);font-weight:700;}
 .nb.pg{color:#ffd27a;}.nb.pg.active{color:#ffd27a;border-bottom-color:#ffd27a;}
 .nb.pro{color:#a8e6cf;}.nb.pro.active{color:#a8e6cf;border-bottom-color:#a8e6cf;}
-
-/* CONTENT */
 .wrap{max-width:1060px;margin:20px auto;padding:0 14px 48px;}
 .sec{display:none;}.sec.active{display:block;}
-
-/* SECTION HEADER */
 .sh{background:#fff;border-left:5px solid var(--ac);padding:13px 17px;border-radius:0 8px 8px 0;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
 .sh h3{font-size:1.05rem;color:var(--pr);}
 .sh p{font-size:.76rem;color:var(--mu);margin-top:3px;}
 .nref{display:inline-block;background:#fff3e0;color:#b35c00;border:1px solid #f0b87a;border-radius:4px;padding:2px 8px;font-size:.66rem;font-weight:700;margin-top:5px;}
-
-/* CARDS */
 .card{background:#fff;border-radius:8px;padding:16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.08);border:1px solid var(--bd);}
 .card h4{font-size:.88rem;color:var(--pr);margin-bottom:10px;padding-bottom:7px;border-bottom:1px solid var(--bd);}
-
-/* GUIDE BOX */
 .guide{background:#f0f7ff;border:1px solid #b3d1f0;border-radius:6px;padding:10px 14px;font-size:.75rem;color:#1a4a6b;margin-bottom:12px;line-height:1.7;}
 .guide code{background:#dce8f7;padding:1px 5px;border-radius:3px;font-size:.72rem;}
-
-/* DOC TABLE */
+.warn{background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;font-size:.75rem;color:#7a5c00;margin-bottom:12px;line-height:1.7;}
 .dt{width:100%;border-collapse:collapse;font-size:.78rem;}
 .dt th{background:var(--pr);color:#fff;padding:8px 11px;text-align:left;font-size:.7rem;font-weight:600;}
 .dt td{padding:8px 11px;border-bottom:1px solid var(--bd);vertical-align:middle;}
@@ -62,21 +49,16 @@ body{font-family:'Segoe UI',Arial,sans-serif;color:var(--tx);background:#eef2f7;
 .vbtn:hover{background:#0d2f47;}
 .pbtn{background:#1e7c4a;}.pbtn:hover{background:#155c37;}
 .ph{color:#bbb;font-style:italic;font-size:.76rem;}
-
-/* STATS ROW */
+.pending{color:#e65100;font-style:italic;font-size:.74rem;}
 .srow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:16px;}
 .sbox{background:#fff;border-radius:8px;padding:14px;text-align:center;border:1px solid var(--bd);box-shadow:0 1px 3px rgba(0,0,0,.06);}
 .snum{font-size:1.6rem;font-weight:700;color:var(--pr);}
 .slbl{font-size:.7rem;color:var(--mu);margin-top:3px;}
-
-/* PG TABS */
 .pg-tabs{display:flex;gap:0;border-bottom:2px solid var(--bd);margin-bottom:16px;}
 .pgt{padding:9px 18px;font-size:.8rem;cursor:pointer;border:none;background:none;color:var(--mu);border-bottom:3px solid transparent;margin-bottom:-2px;font-family:inherit;font-weight:500;transition:all .18s;}
 .pgt:hover{color:var(--pr);}
 .pgt.active{color:var(--pr);border-bottom-color:var(--pr);font-weight:700;}
 .pg-panel{display:none;}.pg-panel.active{display:block;}
-
-/* ADD DOCUMENT FORM */
 .add-form{background:var(--li);border:1px solid var(--bd);border-radius:8px;padding:16px;margin-bottom:16px;}
 .add-form h5{font-size:.82rem;color:var(--pr);margin-bottom:12px;font-weight:700;}
 .form-row{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end;}
@@ -84,32 +66,24 @@ body{font-family:'Segoe UI',Arial,sans-serif;color:var(--tx);background:#eef2f7;
 .form-group label{font-size:.7rem;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.3px;}
 .form-group input{padding:8px 10px;border:1px solid var(--bd);border-radius:5px;font-size:.8rem;font-family:inherit;outline:none;width:100%;}
 .form-group input:focus{border-color:var(--pr);box-shadow:0 0 0 2px rgba(26,74,107,.12);}
-.add-btn{background:var(--pr);color:#fff;border:none;padding:8px 18px;border-radius:5px;font-size:.8rem;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;transition:background .18s;}
+.add-btn{background:var(--pr);color:#fff;border:none;padding:8px 18px;border-radius:5px;font-size:.8rem;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;}
 .add-btn:hover{background:#0d2f47;}
 .del-btn{background:none;border:none;color:#e74c3c;cursor:pointer;font-size:1rem;padding:2px 6px;}
 .del-btn:hover{background:#fde8e8;border-radius:4px;}
 .empty-msg{color:var(--mu);font-size:.78rem;font-style:italic;padding:12px 0;text-align:center;}
-
-/* PROSPECTUS */
 .prosp-hero{background:linear-gradient(135deg,var(--pr),#0c2c44);color:#fff;border-radius:10px;padding:28px 24px;text-align:center;margin-bottom:18px;}
 .prosp-hero h3{font-size:1.3rem;margin-bottom:6px;}
 .prosp-hero p{font-size:.82rem;opacity:.8;}
-
-/* HOME */
-.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .quick-link{display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--li);border-radius:6px;border-left:3px solid var(--ac);cursor:pointer;font-size:.8rem;transition:background .15s;}
 .quick-link:hover{background:#e4eff8;}
-
-/* FOOTER */
 footer{background:var(--pr);color:rgba(255,255,255,.7);text-align:center;padding:14px;font-size:.72rem;}
 footer strong{color:#fff;}
-
-@media(max-width:640px){.hbadges{display:none;}.form-row{grid-template-columns:1fr;}.home-grid{grid-template-columns:1fr;}}
+@media(max-width:640px){.hbadges{display:none;}.form-row{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════ HEADER ═══════════════════ -->
+<!-- HEADER -->
 <div class="hdr">
   <div class="htop">
     <div class="logo">🏥</div>
@@ -125,8 +99,7 @@ footer strong{color:#fff;}
     </div>
     <div class="hbadges">
       <span class="hbadge gn">✔ NCISM Compliant Portal</span>
-      <span class="hbadge">Est. [Year]</span>
-      <span class="hbadge">Beds: [XXX]</span>
+      <span class="hbadge">BAMS | PG Programs</span>
     </div>
   </div>
   <div class="nbar">
@@ -135,7 +108,7 @@ footer strong{color:#fff;}
   </div>
 </div>
 
-<!-- ═══════════════════ NAV ═══════════════════ -->
+<!-- NAV -->
 <div class="nav">
   <div class="navs">
     <button class="nb active"  onclick="show('home',this)">🏠 Home</button>
@@ -158,12 +131,11 @@ footer strong{color:#fff;}
   </div>
 </div>
 
-<!-- ═══════════════════ CONTENT ═══════════════════ -->
 <div class="wrap">
 
 <!-- HOME -->
 <div id="home" class="sec active">
-  <div class="sh"><h3>🏠 Welcome — NCISM Mandatory Disclosure Portal</h3><p>All disclosures are maintained as per NCISM Website Regulation Section 11. Data updated on or before 10th of each month.</p></div>
+  <div class="sh"><h3>🏠 Welcome — NCISM Mandatory Disclosure Portal</h3><p>All disclosures maintained as per NCISM Website Regulation Section 11. Data updated on or before 10th of each month.</p></div>
   <div class="srow">
     <div class="sbox"><div class="snum">BAMS</div><div class="slbl">UG Program</div></div>
     <div class="sbox"><div class="snum">100</div><div class="slbl">Annual Intake</div></div>
@@ -192,7 +164,7 @@ footer strong{color:#fff;}
   </div>
   <div class="card" style="background:#fffbec;border-color:#f0d87a;">
     <h4>⚠️ NCISM Data Upload Obligations</h4>
-    <div style="font-size:.8rem;line-height:2;color:var(--tx);">
+    <div style="font-size:.8rem;line-height:2;">
       📅 <strong>Deadline:</strong> 10th of every month &nbsp;|&nbsp; 📋 <strong>Period:</strong> Previous calendar month<br>
       👁️ <strong>Reg. 11(3):</strong> Commission captures data continuously at different intervals<br>
       ✅ <strong>Reg. 11(4):</strong> College is responsible for authenticity of all data and documents<br>
@@ -204,14 +176,14 @@ footer strong{color:#fff;}
 <!-- ADMINISTRATION -->
 <div id="admin" class="sec">
   <div class="sh"><h3>👤 Administration — Principal / Director / Dean / Medical Superintendent</h3><p>Name, DOB, photograph, teacher code, registration, qualification, designation, joining date, experience, contact</p><span class="nref">NCISM Reg. 11(6)(a)</span></div>
+  <div class="warn">⚠️ <strong>Action Needed:</strong> Please prepare and upload the following PDFs to <code>docs/administration/</code> — Principal Bio-Data, Principal Registration Certificate, MS Bio-Data, MS Registration Certificate. Then send screenshots and these rows will be updated.</div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload PDFs to your GitHub repo under <code>/docs/administration/</code> and add rows below by editing <code>index.html</code>.</div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Period / Ref</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>Principal — Bio-Data &amp; Appointment Letter</td><td>Current</td><td>[Date]</td><td><a href="docs/administration/principal-biodata.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>Principal — KAMC Registration Certificate</td><td>Current</td><td>[Date]</td><td><a href="docs/administration/principal-regn.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>Medical Superintendent — Bio-Data &amp; Appointment</td><td>Current</td><td>[Date]</td><td><a href="docs/administration/ms-biodata.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>4</td><td>Medical Superintendent — Registration Certificate</td><td>Current</td><td>[Date]</td><td><a href="docs/administration/ms-regn.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add more rows as needed ]</td></tr>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Period / Ref</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ Principal Bio-Data &amp; Appointment Letter — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Principal KAMC Registration Certificate — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Medical Superintendent Bio-Data — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Medical Superintendent Registration Certificate — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -220,30 +192,31 @@ footer strong{color:#fff;}
 <div id="reg" class="sec">
   <div class="sh"><h3>📜 Registrations, Approvals &amp; Affiliations</h3><p>NCISM approval, RGUHS affiliation, Government NOC, Council registration, Trust registration and permission status</p><span class="nref">NCISM Reg. 11(6)(b)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload PDFs to <code>/docs/regulatory/</code> and update rows below.</div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Authority</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>NCISM Approval / Permission Letter</td><td>NCISM, New Delhi</td><td>[Date]</td><td><a href="docs/regulatory/ncism-approval.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>RGUHS Affiliation Certificate</td><td>RGUHS, Bengaluru</td><td>[Date]</td><td><a href="docs/regulatory/rguhs-affiliation.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>Government of Karnataka — NOC / Recognition</td><td>Govt. of Karnataka</td><td>[Date]</td><td><a href="docs/regulatory/gok-noc.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>4</td><td>KAMC / AYUSH Registration</td><td>KAMC</td><td>[Date]</td><td><a href="docs/regulatory/kamc-reg.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>5</td><td>Trust / Society Registration</td><td>Registrar of Societies</td><td>[Date]</td><td><a href="docs/regulatory/trust-reg.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>6</td><td>Annual Permission — 2024-25</td><td>NCISM</td><td>[Date]</td><td><a href="docs/regulatory/permit-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>7</td><td>Annual Permission — 2023-24</td><td>NCISM</td><td>[Date]</td><td><a href="docs/regulatory/permit-2023-24.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add more rows ]</td></tr>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Authority</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td>1</td><td>NCISM Permission Letter 2025-26</td><td>NCISM, New Delhi</td><td>May 2025</td><td><a href="docs/regulatory/ncism-permission-2025-26.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>2</td><td>RGUHS Affiliation Certificate</td><td>RGUHS, Bengaluru</td><td>May 2025</td><td><a href="docs/regulatory/rguhs-affiliation.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>3</td><td>KPMEA Registration</td><td>KPMEA</td><td>May 2025</td><td><a href="docs/regulatory/kpmea-reg.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>4</td><td>BAMS Program Approval</td><td>NCISM</td><td>May 2025</td><td><a href="docs/regulatory/bams-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>5</td><td>PG Approval — MD Kayachikitsa</td><td>NCISM / RGUHS</td><td>May 2025</td><td><a href="docs/regulatory/pg-kayachikitsa-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>6</td><td>PG Approval — MD Samhita &amp; Siddhanta</td><td>NCISM / RGUHS</td><td>May 2025</td><td><a href="docs/regulatory/pg-samhita-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>7</td><td>PG Approval — MD Shalya Tantra</td><td>NCISM / RGUHS</td><td>May 2025</td><td><a href="docs/regulatory/pg-shalya-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td colspan="4" class="pending">⏳ Govt. of Karnataka NOC — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Trust / Society Registration — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
 
 <!-- TEACHING STAFF -->
 <div id="teach" class="sec">
-  <div class="sh"><h3>👨‍🏫 Teaching Staff</h3><p>Qualifications, registration number, teacher code, academic notifications, designation, joining date, experience, department, contact</p><span class="nref">NCISM Reg. 11(6)(c)</span></div>
+  <div class="sh"><h3>👨‍🏫 Teaching Staff</h3><p>Qualifications, registration number, teacher code, designation, joining date, experience, department, contact</p><span class="nref">NCISM Reg. 11(6)(c)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/teaching/</code> — name files by month: <code>staff-list-apr-2025.pdf</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Month–Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>Teaching Staff Master List (Complete with all details)</td><td>Apr 2025</td><td>[Date]</td><td><a href="docs/teaching/staff-list-apr-2025.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>Appointment Letters — All Teaching Faculty</td><td>Current</td><td>[Date]</td><td><a href="docs/teaching/appointment-letters.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>NCISM SIF / Staff Details Form</td><td>2024-25</td><td>[Date]</td><td><a href="docs/teaching/ncism-sif.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add new month's staff list every month ]</td></tr>
+    <div class="guide">Add a new file every month — name it <code>teaching-staff-list-mmm-yyyy.pdf</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Period</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td>1</td><td>Teaching Staff List — Complete with All Details</td><td>2026-27</td><td>May 2025</td><td><a href="docs/teaching/teaching-staff-list-2026-27.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td colspan="4" class="pending">⏳ Appointment Letters Compilation — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ NCISM SIF / Staff Details Form — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -252,12 +225,12 @@ footer strong{color:#fff;}
 <div id="hosp" class="sec">
   <div class="sh"><h3>🏥 Hospital Specialities &amp; OPD Schedule</h3><p>Specialities, consultants, OPD days and timings</p><span class="nref">NCISM Reg. 11(6)(d)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/hospital/</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Period</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>OPD Schedule — All Departments &amp; Consultants</td><td>Current</td><td>[Date]</td><td><a href="docs/hospital/opd-schedule.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>Hospital Bed Strength Certificate</td><td>Current</td><td>[Date]</td><td><a href="docs/hospital/bed-certificate.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>Specialities &amp; Services Brochure</td><td>Current</td><td>[Date]</td><td><a href="docs/hospital/specialities.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add more ]</td></tr>
+    <div class="guide">Upload to <code>docs/hospital/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Period</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ OPD Schedule — All Departments &amp; Consultants — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Hospital Bed Strength Certificate — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Specialities &amp; Services Brochure — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -266,26 +239,26 @@ footer strong{color:#fff;}
 <div id="nteach" class="sec">
   <div class="sh"><h3>🏢 Non-Teaching Staff</h3><p>College and hospital non-teaching staff — qualifications, post, department, section, unit</p><span class="nref">NCISM Reg. 11(6)(e)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/nonteaching/</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Month–Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>Non-Teaching Staff List — College</td><td>Apr 2025</td><td>[Date]</td><td><a href="docs/nonteaching/college-staff-apr-2025.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>Non-Teaching Staff List — Hospital</td><td>Apr 2025</td><td>[Date]</td><td><a href="docs/nonteaching/hospital-staff-apr-2025.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add monthly ]</td></tr>
+    <div class="guide">Add a new file every month — name it <code>non-teaching-staff-list-mmm-yyyy.pdf</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Period</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td>1</td><td>Non-Teaching Staff List — College &amp; Hospital</td><td>2026-27</td><td>May 2025</td><td><a href="docs/nonteaching/non-teaching-staff-list-2026-27.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>2</td><td>Hospital Staff List</td><td>2026-27</td><td>May 2025</td><td><a href="docs/administration/hospital-staff-list-2026-27.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
     </table>
   </div>
 </div>
 
 <!-- STUDENTS -->
 <div id="stud" class="sec">
-  <div class="sh"><h3>🎓 Student Admissions</h3><p>Merit-wise and category-wise list of admitted students — current and previous years</p><span class="nref">NCISM Reg. 11(6)(f)</span></div>
+  <div class="sh"><h3>🎓 Student Admissions</h3><p>Merit-wise and category-wise list — current and previous years</p><span class="nref">NCISM Reg. 11(6)(f)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/students/</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Batch</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>Admission List — Merit &amp; Category Wise</td><td>2024-25</td><td>[Date]</td><td><a href="docs/students/admit-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>Admission List — Merit &amp; Category Wise</td><td>2023-24</td><td>[Date]</td><td><a href="docs/students/admit-2023-24.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>Admission List — Merit &amp; Category Wise</td><td>2022-23</td><td>[Date]</td><td><a href="docs/students/admit-2022-23.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>4</td><td>Fee Structure — Current Year</td><td>2024-25</td><td>[Date]</td><td><a href="docs/students/fee-structure-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add each year's list ]</td></tr>
+    <div class="guide">Upload to <code>docs/students/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Batch</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ Admission List — Merit &amp; Category Wise 2025-26 — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Admission List — Merit &amp; Category Wise 2024-25 — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Admission List — Merit &amp; Category Wise 2023-24 — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Fee Structure — Current Year — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -294,16 +267,13 @@ footer strong{color:#fff;}
 <div id="res" class="sec">
   <div class="sh"><h3>📊 University Examination Results</h3><p>Year-wise results with comparative graph — previous three years</p><span class="nref">NCISM Reg. 11(6)(g)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/results/</code> — include comparative graphs as PDF</div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Exam / Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>BAMS Final Year Result</td><td>2024</td><td>[Date]</td><td><a href="docs/results/bams-final-2024.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>BAMS Final Year Result</td><td>2023</td><td>[Date]</td><td><a href="docs/results/bams-final-2023.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>BAMS Final Year Result</td><td>2022</td><td>[Date]</td><td><a href="docs/results/bams-final-2022.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>4</td><td>BAMS Part I Result</td><td>2024</td><td>[Date]</td><td><a href="docs/results/bams1-2024.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>5</td><td>BAMS Part II Result</td><td>2024</td><td>[Date]</td><td><a href="docs/results/bams2-2024.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>6</td><td>BAMS Part III Result</td><td>2024</td><td>[Date]</td><td><a href="docs/results/bams3-2024.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>7</td><td>3-Year Comparative Result Graph</td><td>2022–2024</td><td>[Date]</td><td><a href="docs/results/comparative-graph.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add supplementary results as needed ]</td></tr>
+    <div class="guide">Upload to <code>docs/results/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Exam / Year</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ BAMS Final Year Result 2024 — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ BAMS Final Year Result 2023 — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ BAMS Final Year Result 2022 — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ 3-Year Comparative Result Graph — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -312,27 +282,24 @@ footer strong{color:#fff;}
 <div id="pub" class="sec">
   <div class="sh"><h3>🔬 Research Publications</h3><p>Year-wise publications by students and faculty</p><span class="nref">NCISM Reg. 11(6)(h)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/research/</code> — compile all publications into one annual PDF</div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>Research Publications List — Faculty &amp; Students</td><td>2024-25</td><td>[Date]</td><td><a href="docs/research/publications-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>Research Publications List — Faculty &amp; Students</td><td>2023-24</td><td>[Date]</td><td><a href="docs/research/publications-2023-24.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>PhD / Thesis Submissions</td><td>2024-25</td><td>[Date]</td><td><a href="docs/research/theses-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add each year ]</td></tr>
+    <div class="guide">Upload to <code>docs/research/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Year</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ Research Publications List 2024-25 — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Research Publications List 2023-24 — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
 
 <!-- ACADEMIC ACTIVITIES -->
 <div id="acad" class="sec">
-  <div class="sh"><h3>📚 Academic Activities</h3><p>CME programs, seminars, conferences, workshops, FDPs, capacity building, hands-on training, research projects, collaborative programs</p><span class="nref">NCISM Reg. 11(6)(i)</span></div>
+  <div class="sh"><h3>📚 Academic Activities</h3><p>CME programs, seminars, conferences, workshops, FDPs, capacity building, hands-on training, research projects</p><span class="nref">NCISM Reg. 11(6)(i)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload event reports to <code>/docs/academic/</code> — name as <code>cme-01-title-date.pdf</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Date / Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>Annual Academic Activity Report</td><td>2024-25</td><td>[Date]</td><td><a href="docs/academic/annual-activity-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>CME Report — [Topic]</td><td>[Date]</td><td>[Date]</td><td><a href="docs/academic/cme-01.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>Workshop Report — [Topic]</td><td>[Date]</td><td>[Date]</td><td><a href="docs/academic/workshop-01.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>4</td><td>Conference Participation Certificate(s)</td><td>2024-25</td><td>[Date]</td><td><a href="docs/academic/conference-certs-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add each event's report ]</td></tr>
+    <div class="guide">Upload reports to <code>docs/academic/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Period</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td>1</td><td>Annual Academic Activity Report</td><td>2025-26</td><td>May 2025</td><td><a href="docs/academic/annual-report-2025-26.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td colspan="4" class="pending">⏳ Individual CME / Workshop Reports — upload and add rows as events occur</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -341,14 +308,14 @@ footer strong{color:#fff;}
 <div id="prog" class="sec">
   <div class="sh"><h3>📋 Educational Programs &amp; Intake Capacity</h3><p>All programs being conducted including sanctioned intake</p><span class="nref">NCISM Reg. 11(6)(j)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/programs/</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Program</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>NCISM Approval — BAMS (100 Seats)</td><td>BAMS UG</td><td>[Date]</td><td><a href="docs/programs/bams-approval.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>NCISM Uniform Curriculum — BAMS</td><td>BAMS UG</td><td>[Date]</td><td><a href="docs/programs/bams-curriculum.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>PG Program Approval — MD Kayachikitsa</td><td>PG</td><td>[Date]</td><td><a href="docs/programs/pg-kayachikitsa-approval.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>4</td><td>PG Program Approval — MD Shalya Tantra</td><td>PG</td><td>[Date]</td><td><a href="docs/programs/pg-shalya-approval.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>5</td><td>PG Program Approval — MD Samhita &amp; Siddhanta</td><td>PG</td><td>[Date]</td><td><a href="docs/programs/pg-samhita-approval.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add more ]</td></tr>
+    <div class="guide">Approval documents are stored in <code>docs/regulatory/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Program</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td>1</td><td>BAMS Program Approval (100 Seats)</td><td>BAMS UG</td><td>May 2025</td><td><a href="docs/regulatory/bams-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>2</td><td>PG Approval — MD Kayachikitsa</td><td>PG</td><td>May 2025</td><td><a href="docs/regulatory/pg-kayachikitsa-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>3</td><td>PG Approval — MD Samhita &amp; Siddhanta</td><td>PG</td><td>May 2025</td><td><a href="docs/regulatory/pg-samhita-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td>4</td><td>PG Approval — MD Shalya Tantra</td><td>PG</td><td>May 2025</td><td><a href="docs/regulatory/pg-shalya-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td colspan="4" class="pending">⏳ BAMS Curriculum Document — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -357,10 +324,10 @@ footer strong{color:#fff;}
 <div id="award" class="sec">
   <div class="sh"><h3>🏆 Accreditations, Awards &amp; Appreciations</h3><p>Recognition received by the Institution, faculty and students</p><span class="nref">NCISM Reg. 11(6)(k)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload to <code>/docs/achievements/</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>[Award / Accreditation Name] — Certificate</td><td>[Year]</td><td>[Date]</td><td><a href="docs/achievements/award-01.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add awards, accreditation certificates ]</td></tr>
+    <div class="guide">Upload to <code>docs/achievements/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Year</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ Awards &amp; Accreditation Certificates — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -369,13 +336,11 @@ footer strong{color:#fff;}
 <div id="hstat" class="sec">
   <div class="sh"><h3>📈 Hospital Statistics</h3><p>Monthly and annual statistics with comparative data and graphs</p><span class="nref">NCISM Reg. 11(6)(l)</span></div>
   <div class="card"><h4>📁 Uploaded Documents</h4>
-    <div class="guide">Upload monthly stats PDF to <code>/docs/hstats/</code> — name as <code>stats-apr-2025.pdf</code>. Add a new row each month.</div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Month–Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>Hospital Statistics — Monthly Report</td><td>Apr 2025</td><td>[Date]</td><td><a href="docs/hstats/stats-apr-2025.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>Hospital Statistics — Monthly Report</td><td>Mar 2025</td><td>[Date]</td><td><a href="docs/hstats/stats-mar-2025.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>Annual Hospital Statistics — Comparative Report</td><td>2024-25</td><td>[Date]</td><td><a href="docs/hstats/annual-stats-2024-25.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td>4</td><td>Annual Hospital Statistics — Comparative Report</td><td>2023-24</td><td>[Date]</td><td><a href="docs/hstats/annual-stats-2023-24.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add each month — new row on or before 10th ]</td></tr>
+    <div class="guide">Upload monthly PDF to <code>docs/hstats/</code> — name as <code>stats-mmm-yyyy.pdf</code> — add a new row each month by 10th</div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Month–Year</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ Monthly Hospital Statistics — awaiting upload</td><td>—</td></tr>
+      <tr><td colspan="4" class="pending">⏳ Annual Comparative Statistics Report — awaiting upload</td><td>—</td></tr>
     </table>
   </div>
 </div>
@@ -384,109 +349,89 @@ footer strong{color:#fff;}
 <div id="events" class="sec">
   <div class="sh"><h3>📢 Upcoming Events &amp; Announcements</h3><p>Forthcoming seminars, workshops, conferences and other events</p><span class="nref">NCISM Reg. 11(6)(m)</span></div>
   <div class="card"><h4>📁 Event Announcements &amp; Reports</h4>
-    <div class="guide">Upload event flyers / notifications to <code>/docs/events/</code></div>
-    <table class="dt"><tr><th>#</th><th>Event Name</th><th>Date / Period</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>[Upcoming Event Name — e.g., CME on Panchakarma]</td><td>[Date]</td><td>[Date]</td><td><a href="docs/events/event-01-flyer.pdf" class="vbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add each upcoming event's notification / flyer ]</td></tr>
+    <div class="guide">Upload event flyers to <code>docs/events/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Event Name</th><th>Date</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td colspan="4" class="pending">⏳ No upcoming events listed yet — upload flyer and add row</td><td>—</td></tr>
     </table>
   </div>
 </div>
 
-<!-- ═══════════════════ POST GRADUATE STUDIES ═══════════════════ -->
+<!-- POST GRADUATE -->
 <div id="pg" class="sec">
   <div class="sh" style="border-left-color:#c8a200;">
     <h3 style="color:#7a5c00;">🎓 Post Graduate Studies</h3>
     <p>Department-wise PG document repository — MD programs approved by NCISM &amp; RGUHS</p>
     <span class="nref" style="background:#fffbec;color:#7a5c00;border-color:#f0d87a;">PG Department Portal</span>
   </div>
-
-  <!-- PG Sub-tabs -->
   <div class="pg-tabs">
     <button class="pgt active" onclick="showPg('samhita',this)">📜 Samhita &amp; Siddhanta</button>
     <button class="pgt" onclick="showPg('shalya',this)">🔪 Shalya Tantra</button>
     <button class="pgt" onclick="showPg('kaya',this)">🩺 Kayachikitsa</button>
   </div>
 
-  <!-- SAMHITA & SIDDHANTA -->
+  <!-- SAMHITA -->
   <div id="pg-samhita" class="pg-panel active">
     <div class="card" style="border-color:#f0d87a;">
       <h4 style="color:#7a5c00;">📜 MD Samhita &amp; Siddhanta — Documents</h4>
-      <div class="guide">Add documents for MD Samhita &amp; Siddhanta below. Enter the document name and the GitHub file URL, then click Add.</div>
+      <div class="guide">Upload files to <code>docs/pg/samhita/</code> then enter the document name and file path below and click Add.</div>
       <div class="add-form">
         <h5>➕ Add New Document</h5>
         <div class="form-row">
-          <div class="form-group">
-            <label>Document Name</label>
-            <input type="text" id="sam-name" placeholder="e.g., MD Admission List 2024-25">
-          </div>
-          <div class="form-group">
-            <label>GitHub File Path / URL</label>
-            <input type="text" id="sam-url" placeholder="docs/pg/samhita/admit-2024-25.pdf">
-          </div>
+          <div class="form-group"><label>Document Name</label><input type="text" id="sam-name" placeholder="e.g., MD Admission List 2025-26"></div>
+          <div class="form-group"><label>File Path (in GitHub)</label><input type="text" id="sam-url" placeholder="docs/pg/samhita/filename.pdf"></div>
           <button class="add-btn" onclick="addDoc('samhita')">+ Add</button>
         </div>
       </div>
       <table class="dt"><tr><th>#</th><th>Document Name</th><th>Added On</th><th>View PDF</th><th></th></tr>
         <tbody id="sam-list"></tbody>
       </table>
-      <div id="sam-empty" class="empty-msg">No documents added yet. Use the form above to add your first document.</div>
+      <div id="sam-empty" class="empty-msg">No documents added yet. Upload to docs/pg/samhita/ then use the form above.</div>
     </div>
   </div>
 
-  <!-- SHALYA TANTRA -->
+  <!-- SHALYA -->
   <div id="pg-shalya" class="pg-panel">
     <div class="card" style="border-color:#f0d87a;">
       <h4 style="color:#7a5c00;">🔪 MD Shalya Tantra — Documents</h4>
-      <div class="guide">Add documents for MD Shalya Tantra below. Enter the document name and the GitHub file URL, then click Add.</div>
+      <div class="guide">Upload files to <code>docs/pg/shalya/</code> then enter the document name and file path below and click Add.</div>
       <div class="add-form">
         <h5>➕ Add New Document</h5>
         <div class="form-row">
-          <div class="form-group">
-            <label>Document Name</label>
-            <input type="text" id="sha-name" placeholder="e.g., Faculty List — Shalya Tantra">
-          </div>
-          <div class="form-group">
-            <label>GitHub File Path / URL</label>
-            <input type="text" id="sha-url" placeholder="docs/pg/shalya/faculty-list.pdf">
-          </div>
+          <div class="form-group"><label>Document Name</label><input type="text" id="sha-name" placeholder="e.g., Faculty List — Shalya Tantra"></div>
+          <div class="form-group"><label>File Path (in GitHub)</label><input type="text" id="sha-url" placeholder="docs/pg/shalya/filename.pdf"></div>
           <button class="add-btn" onclick="addDoc('shalya')">+ Add</button>
         </div>
       </div>
       <table class="dt"><tr><th>#</th><th>Document Name</th><th>Added On</th><th>View PDF</th><th></th></tr>
         <tbody id="sha-list"></tbody>
       </table>
-      <div id="sha-empty" class="empty-msg">No documents added yet. Use the form above to add your first document.</div>
+      <div id="sha-empty" class="empty-msg">No documents added yet. Upload to docs/pg/shalya/ then use the form above.</div>
     </div>
   </div>
 
-  <!-- KAYACHIKITSA -->
+  <!-- KAYA -->
   <div id="pg-kaya" class="pg-panel">
     <div class="card" style="border-color:#f0d87a;">
       <h4 style="color:#7a5c00;">🩺 MD Kayachikitsa — Documents</h4>
-      <div class="guide">Add documents for MD Kayachikitsa below. Enter the document name and the GitHub file URL, then click Add.</div>
+      <div class="guide">Upload files to <code>docs/pg/kaya/</code> then enter the document name and file path below and click Add.</div>
       <div class="add-form">
         <h5>➕ Add New Document</h5>
         <div class="form-row">
-          <div class="form-group">
-            <label>Document Name</label>
-            <input type="text" id="kay-name" placeholder="e.g., Dissertation Topics 2024-25">
-          </div>
-          <div class="form-group">
-            <label>GitHub File Path / URL</label>
-            <input type="text" id="kay-url" placeholder="docs/pg/kayachikitsa/dissertations-2024-25.pdf">
-          </div>
+          <div class="form-group"><label>Document Name</label><input type="text" id="kay-name" placeholder="e.g., Dissertation Topics 2025-26"></div>
+          <div class="form-group"><label>File Path (in GitHub)</label><input type="text" id="kay-url" placeholder="docs/pg/kaya/filename.pdf"></div>
           <button class="add-btn" onclick="addDoc('kaya')">+ Add</button>
         </div>
       </div>
       <table class="dt"><tr><th>#</th><th>Document Name</th><th>Added On</th><th>View PDF</th><th></th></tr>
         <tbody id="kay-list"></tbody>
       </table>
-      <div id="kay-empty" class="empty-msg">No documents added yet. Use the form above to add your first document.</div>
+      <div id="kay-empty" class="empty-msg">No documents added yet. Upload to docs/pg/kaya/ then use the form above.</div>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════ PROSPECTUS ═══════════════════ -->
+<!-- PROSPECTUS -->
 <div id="prosp" class="sec">
   <div class="prosp-hero">
     <h3>📖 College Prospectus</h3>
@@ -494,31 +439,34 @@ footer strong{color:#fff;}
   </div>
   <div class="card">
     <h4>📁 Prospectus Documents</h4>
-    <div class="guide">Upload prospectus PDFs to <code>/docs/prospectus/</code> and add rows below. Name files as <code>prospectus-bams-2024-25.pdf</code></div>
-    <table class="dt"><tr><th>#</th><th>Document Name</th><th>Academic Year</th><th>Uploaded On</th><th>View PDF</th></tr>
-      <tr><td>1</td><td>BAMS Prospectus — Admissions &amp; Program Details</td><td>2024-25</td><td>[Date]</td><td><a href="docs/prospectus/prospectus-bams-2024-25.pdf" class="vbtn pbtn">📄 Open PDF</a></td></tr>
-      <tr><td>2</td><td>PG Prospectus — MD Programs</td><td>2024-25</td><td>[Date]</td><td><a href="docs/prospectus/prospectus-pg-2024-25.pdf" class="vbtn pbtn">📄 Open PDF</a></td></tr>
-      <tr><td>3</td><td>Admission Information Brochure</td><td>2024-25</td><td>[Date]</td><td><a href="docs/prospectus/admission-brochure-2024-25.pdf" class="vbtn pbtn">📄 Open PDF</a></td></tr>
-      <tr><td class="ph" colspan="5">[ Add each year's prospectus ]</td></tr>
+    <div class="guide">Upload prospectus PDFs to <code>docs/prospectus/</code></div>
+    <table class="dt">
+      <tr><th>#</th><th>Document Name</th><th>Academic Year</th><th>Uploaded On</th><th>View PDF</th></tr>
+      <tr><td>1</td><td>College Prospectus — BAMS &amp; PG Programs</td><td>2025-26</td><td>May 2025</td><td><a href="docs/prospectus/prospectus.pdf" class="vbtn pbtn" target="_blank">📄 Open PDF</a></td></tr>
+      <tr><td colspan="4" class="pending">⏳ Add next year's prospectus when available</td><td>—</td></tr>
     </table>
   </div>
 </div>
 
 <!-- ALL DOCUMENTS -->
 <div id="alldocs" class="sec">
-  <div class="sh"><h3>📁 All Documents — Master Index</h3><p>Complete index of all uploaded documents across all sections</p></div>
-  <div class="card"><h4>📋 Document Index</h4>
-    <div class="guide">This page serves as the master index. When inspection committee visits, direct them here for a complete overview of all uploaded documents.</div>
-    <table class="dt"><tr><th>Section</th><th>Document</th><th>Period</th><th>View</th></tr>
-      <tr><td>Administration</td><td>Principal Bio-Data &amp; Appointment</td><td>Current</td><td><a href="docs/administration/principal-biodata.pdf" class="vbtn">📄 PDF</a></td></tr>
-      <tr><td>Regulatory</td><td>NCISM Approval Letter</td><td>Current</td><td><a href="docs/regulatory/ncism-approval.pdf" class="vbtn">📄 PDF</a></td></tr>
-      <tr><td>Regulatory</td><td>RGUHS Affiliation Certificate</td><td>Current</td><td><a href="docs/regulatory/rguhs-affiliation.pdf" class="vbtn">📄 PDF</a></td></tr>
-      <tr><td>Teaching Staff</td><td>Staff Master List</td><td>Apr 2025</td><td><a href="docs/teaching/staff-list-apr-2025.pdf" class="vbtn">📄 PDF</a></td></tr>
-      <tr><td>Students</td><td>Admission List 2024-25</td><td>2024-25</td><td><a href="docs/students/admit-2024-25.pdf" class="vbtn">📄 PDF</a></td></tr>
-      <tr><td>Results</td><td>BAMS Final Result 2024</td><td>2024</td><td><a href="docs/results/bams-final-2024.pdf" class="vbtn">📄 PDF</a></td></tr>
-      <tr><td>Hospital Stats</td><td>Monthly Report — Apr 2025</td><td>Apr 2025</td><td><a href="docs/hstats/stats-apr-2025.pdf" class="vbtn">📄 PDF</a></td></tr>
-      <tr><td>Prospectus</td><td>BAMS Prospectus 2024-25</td><td>2024-25</td><td><a href="docs/prospectus/prospectus-bams-2024-25.pdf" class="vbtn pbtn">📄 PDF</a></td></tr>
-      <tr><td class="ph" colspan="4">[ Mirror key documents here as you add them ]</td></tr>
+  <div class="sh"><h3>📁 All Documents — Master Index</h3><p>Complete index of all currently uploaded documents across all sections</p></div>
+  <div class="card">
+    <h4>📋 Document Index — Confirmed Live Documents</h4>
+    <table class="dt">
+      <tr><th>Section</th><th>Document</th><th>Period</th><th>View</th></tr>
+      <tr><td>Regulatory</td><td>NCISM Permission Letter</td><td>2025-26</td><td><a href="docs/regulatory/ncism-permission-2025-26.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Regulatory</td><td>RGUHS Affiliation Certificate</td><td>Current</td><td><a href="docs/regulatory/rguhs-affiliation.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Regulatory</td><td>KPMEA Registration</td><td>Current</td><td><a href="docs/regulatory/kpmea-reg.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Regulatory</td><td>BAMS Program Approval</td><td>Current</td><td><a href="docs/regulatory/bams-approval.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Regulatory</td><td>PG Approval — MD Kayachikitsa</td><td>Current</td><td><a href="docs/regulatory/pg-kayachikitsa-approval.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Regulatory</td><td>PG Approval — MD Samhita &amp; Siddhanta</td><td>Current</td><td><a href="docs/regulatory/pg-samhita-approval.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Regulatory</td><td>PG Approval — MD Shalya Tantra</td><td>Current</td><td><a href="docs/regulatory/pg-shalya-approval.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Teaching Staff</td><td>Teaching Staff List</td><td>2026-27</td><td><a href="docs/teaching/teaching-staff-list-2026-27.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Non-Teaching</td><td>Non-Teaching Staff List</td><td>2026-27</td><td><a href="docs/nonteaching/non-teaching-staff-list-2026-27.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Non-Teaching</td><td>Hospital Staff List</td><td>2026-27</td><td><a href="docs/administration/hospital-staff-list-2026-27.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Academic Activities</td><td>Annual Academic Activity Report</td><td>2025-26</td><td><a href="docs/academic/annual-report-2025-26.pdf" class="vbtn" target="_blank">📄 PDF</a></td></tr>
+      <tr><td>Prospectus</td><td>College Prospectus</td><td>2025-26</td><td><a href="docs/prospectus/prospectus.pdf" class="vbtn pbtn" target="_blank">📄 PDF</a></td></tr>
     </table>
   </div>
 </div>
@@ -533,108 +481,80 @@ footer strong{color:#fff;}
 </footer>
 
 <script>
-// Date
 const d = new Date();
 document.getElementById('ldate').textContent = d.toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'});
 
-// Nav
-function show(id, btn) {
-  document.querySelectorAll('.sec').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nb').forEach(b => b.classList.remove('active'));
+function show(id,btn){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   btn.classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
 }
-function showById(id) {
-  document.querySelectorAll('.sec').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nb').forEach(b => {
+function showById(id){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nb').forEach(b=>{
     b.classList.remove('active');
-    if(b.getAttribute('onclick') && b.getAttribute('onclick').includes("'"+id+"'")) b.classList.add('active');
+    if(b.getAttribute('onclick')&&b.getAttribute('onclick').includes("'"+id+"'"))b.classList.add('active');
   });
   document.getElementById(id).classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
 }
-
-// PG sub-tabs
-function showPg(id, btn) {
-  document.querySelectorAll('.pg-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.pgt').forEach(b => b.classList.remove('active'));
+function showPg(id,btn){
+  document.querySelectorAll('.pg-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.pgt').forEach(b=>b.classList.remove('active'));
   document.getElementById('pg-'+id).classList.add('active');
   btn.classList.add('active');
 }
 
-// PG Document Management with persistent storage
-const deptMap = {
-  samhita: { name: 'sam', list: 'sam-list', empty: 'sam-empty', store: 'pg:samhita' },
-  shalya:  { name: 'sha', list: 'sha-list', empty: 'sha-empty', store: 'pg:shalya' },
-  kaya:    { name: 'kay', list: 'kay-list', empty: 'kay-empty', store: 'pg:kaya' }
+const deptMap={
+  samhita:{name:'sam',list:'sam-list',empty:'sam-empty',store:'pg:samhita'},
+  shalya: {name:'sha',list:'sha-list',empty:'sha-empty',store:'pg:shalya'},
+  kaya:   {name:'kay',list:'kay-list',empty:'kay-empty',store:'pg:kaya'}
 };
 
-async function loadDocs(dept) {
-  const cfg = deptMap[dept];
-  let docs = [];
-  try {
-    const r = await window.storage.get(cfg.store);
-    if (r && r.value) docs = JSON.parse(r.value);
-  } catch(e) { docs = []; }
-  renderDocs(dept, docs);
+async function loadDocs(dept){
+  const c=deptMap[dept]; let docs=[];
+  try{const r=await window.storage.get(c.store);if(r&&r.value)docs=JSON.parse(r.value);}catch(e){}
+  renderDocs(dept,docs);
 }
-
-function renderDocs(dept, docs) {
-  const cfg = deptMap[dept];
-  const tbody = document.getElementById(cfg.list);
-  const empty = document.getElementById(cfg.empty);
-  tbody.innerHTML = '';
-  if (!docs.length) { empty.style.display = 'block'; return; }
-  empty.style.display = 'none';
-  docs.forEach((doc, i) => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td>${i+1}</td>
-      <td><strong>${esc(doc.name)}</strong></td>
-      <td style="color:var(--mu);font-size:.74rem;">${doc.date}</td>
-      <td><a href="${esc(doc.url)}" class="vbtn" target="_blank">📄 Open PDF</a></td>
-      <td><button class="del-btn" onclick="delDoc('${dept}',${i})" title="Remove">🗑</button></td>`;
+function renderDocs(dept,docs){
+  const c=deptMap[dept];
+  const tbody=document.getElementById(c.list);
+  const empty=document.getElementById(c.empty);
+  tbody.innerHTML='';
+  if(!docs.length){empty.style.display='block';return;}
+  empty.style.display='none';
+  docs.forEach((doc,i)=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${i+1}</td><td><strong>${esc(doc.name)}</strong></td><td style="color:var(--mu);font-size:.74rem;">${doc.date}</td><td><a href="${esc(doc.url)}" class="vbtn" target="_blank">📄 Open PDF</a></td><td><button class="del-btn" onclick="delDoc('${dept}',${i})">🗑</button></td>`;
     tbody.appendChild(tr);
   });
 }
-
-async function addDoc(dept) {
-  const cfg = deptMap[dept];
-  const nameEl = document.getElementById(cfg.name+'-name');
-  const urlEl  = document.getElementById(cfg.name+'-url');
-  const name = nameEl.value.trim();
-  const url  = urlEl.value.trim();
-  if (!name || !url) { alert('Please enter both Document Name and File Path / URL.'); return; }
-  let docs = [];
-  try {
-    const r = await window.storage.get(cfg.store);
-    if (r && r.value) docs = JSON.parse(r.value);
-  } catch(e) {}
-  const now = new Date().toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
-  docs.push({name, url, date: now});
-  await window.storage.set(cfg.store, JSON.stringify(docs));
-  nameEl.value = ''; urlEl.value = '';
-  renderDocs(dept, docs);
+async function addDoc(dept){
+  const c=deptMap[dept];
+  const nameEl=document.getElementById(c.name+'-name');
+  const urlEl=document.getElementById(c.name+'-url');
+  const name=nameEl.value.trim(); const url=urlEl.value.trim();
+  if(!name||!url){alert('Please enter both Document Name and File Path.');return;}
+  let docs=[];
+  try{const r=await window.storage.get(c.store);if(r&&r.value)docs=JSON.parse(r.value);}catch(e){}
+  const now=new Date().toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+  docs.push({name,url,date:now});
+  await window.storage.set(c.store,JSON.stringify(docs));
+  nameEl.value='';urlEl.value='';
+  renderDocs(dept,docs);
 }
-
-async function delDoc(dept, idx) {
-  if (!confirm('Remove this document from the list?')) return;
-  const cfg = deptMap[dept];
-  let docs = [];
-  try {
-    const r = await window.storage.get(cfg.store);
-    if (r && r.value) docs = JSON.parse(r.value);
-  } catch(e) {}
-  docs.splice(idx, 1);
-  await window.storage.set(cfg.store, JSON.stringify(docs));
-  renderDocs(dept, docs);
+async function delDoc(dept,idx){
+  if(!confirm('Remove this document?'))return;
+  const c=deptMap[dept]; let docs=[];
+  try{const r=await window.storage.get(c.store);if(r&&r.value)docs=JSON.parse(r.value);}catch(e){}
+  docs.splice(idx,1);
+  await window.storage.set(c.store,JSON.stringify(docs));
+  renderDocs(dept,docs);
 }
-
-function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
-
-// Load all PG docs on start
-loadDocs('samhita'); loadDocs('shalya'); loadDocs('kaya');
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+loadDocs('samhita');loadDocs('shalya');loadDocs('kaya');
 </script>
 </body>
 </html>
