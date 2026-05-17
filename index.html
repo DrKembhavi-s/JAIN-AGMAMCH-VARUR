@@ -25,8 +25,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;color:var(--tx);background:#eef2f7;
 .lbar a{color:var(--pr);text-decoration:none;font-weight:600;transition:color .15s;display:flex;align-items:center;gap:4px;}
 .lbar a:hover{color:var(--ac);text-decoration:underline;}
 .nav{background:#0c2c44;border-bottom:2px solid var(--ac);}
-.navs{display:flex;overflow-x:auto;padding:0 8px;scrollbar-width:none;}
-.navs::-webkit-scrollbar{display:none;}
+.navs{display:flex;overflow-x:auto;padding:0 8px;scrollbar-width:thin;scrollbar-color:#c8860a #0c2c44;}
+.navs::-webkit-scrollbar{height:4px;}
+.navs::-webkit-scrollbar-track{background:#0c2c44;}
+.navs::-webkit-scrollbar-thumb{background:var(--ac);border-radius:2px;}
 .nb{background:none;border:none;color:rgba(255,255,255,.68);padding:10px 12px;font-size:.75rem;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;transition:all .18s;font-family:inherit;}
 .nb:hover{color:#fff;background:rgba(255,255,255,.06);}
 .nb.active{color:var(--ac);border-bottom-color:var(--ac);font-weight:700;}
@@ -121,6 +123,8 @@ footer strong{color:#fff;}
 
 <!-- NAV -->
 <div class="nav">
+  <div style="display:flex;align-items:center;">
+  <button onclick="this.nextElementSibling.scrollBy({left:-200,behavior:'smooth'})" style="background:#0c2c44;border:none;color:var(--ac);font-size:1.1rem;padding:0 10px;cursor:pointer;flex-shrink:0;height:100%;">&#9664;</button>
   <div class="navs">
     <button class="nb active"  onclick="show('home',this)">🏠 Home</button>
     <button class="nb" onclick="show('admin',this)">👤 Administration</button>
@@ -140,7 +144,11 @@ footer strong{color:#fff;}
     <button class="nb pro" onclick="show('prosp',this)">📖 Prospectus</button>
     <button class="nb" onclick="show('alldocs',this)">📁 All Documents</button>
   </div>
+  <button onclick="this.previousElementSibling.scrollBy({left:200,behavior:'smooth'})" style="background:#0c2c44;border:none;color:var(--ac);font-size:1.1rem;padding:0 10px;cursor:pointer;flex-shrink:0;height:100%;">&#9654;</button>
+  </div>
 </div>
+
+<!-- CONTENT -->
 
 <div class="wrap">
 
