@@ -504,21 +504,12 @@ footer strong{color:#fff;}
 
   <!-- SAMHITA -->
   <div id="pg-samhita" class="pg-panel active">
-    <div class="card" style="border-color:#f0d87a;">
-      <h4 style="color:#7a5c00;">📜 MD Samhita &amp; Siddhanta — Documents</h4>
-      <div class="guide">Upload files to <code>docs/pg/samhita/</code> then enter the document name and file path below and click Add.</div>
-      <div class="add-form">
-        <h5>➕ Add New Document</h5>
-        <div class="form-row">
-          <div class="form-group"><label>Document Name</label><input type="text" id="sam-name" placeholder="e.g., MD Admission List 2025-26"></div>
-          <div class="form-group"><label>File Path (in GitHub)</label><input type="text" id="sam-url" placeholder="docs/pg/samhita/filename.pdf"></div>
-          <button class="add-btn" onclick="addDoc('samhita')">+ Add</button>
-        </div>
-      </div>
       <table class="dt"><tr><th>#</th><th>Document Name</th><th>Added On</th><th>View PDF</th><th></th></tr>
         <tbody id="sam-list"></tbody>
       </table>
+<table class="dt"><tr><th>#</th><th>Document Name</th><th>Uploaded On</th><th>View PDF</th><th></th></tr>
 <tbody id="sam-list">
+</tbody></table>
 <tr><td>1</td><td><strong>PG Admission List 2024-25</strong></td><td>May 2026</td><td><a href="docs/pg/samhita/pg-admit-2024-25.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
 <tr><td>2</td><td><strong>PG Admission List 2025-26</strong></td><td>May 2026</td><td><a href="docs/pg/samhita/pg-admit-2025-26.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
 <tr><td>3</td><td><strong>PG Guide List</strong></td><td>May 2026</td><td><a href="docs/pg/samhita/pg-guide-list.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
@@ -531,24 +522,14 @@ footer strong{color:#fff;}
   <div id="pg-shalya" class="pg-panel">
     <div class="card" style="border-color:#f0d87a;">
       <h4 style="color:#7a5c00;">🔪 MD Shalya Tantra — Documents</h4>
-      <div class="guide">Upload files to <code>docs/pg/shalya/</code> then enter the document name and file path below and click Add.</div>
-      <div class="add-form">
-        <h5>➕ Add New Document</h5>
-        <div class="form-row">
-          <div class="form-group"><label>Document Name</label><input type="text" id="sha-name" placeholder="e.g., Faculty List — Shalya Tantra"></div>
-          <div class="form-group"><label>File Path (in GitHub)</label><input type="text" id="sha-url" placeholder="docs/pg/shalya/filename.pdf"></div>
-          <button class="add-btn" onclick="addDoc('shalya')">+ Add</button>
-        </div>
-      </div>
-      <table class="dt"><tr><th>#</th><th>Document Name</th><th>Added On</th><th>View PDF</th><th></th></tr>
-        <tbody id="sha-list"></tbody>
+      <div class="guide">Upload files to <code>docs/pg/shalya/</code></div>
+      <table class="dt">
+        <tr><th>#</th><th>Document Name</th><th>Uploaded On</th><th>View PDF</th></tr>
+        <tr><td>1</td><td>PG Admission List 2024-25</td><td>May 2026</td><td><a href="docs/pg/shalya/pg-admit-2024-25.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+        <tr><td>2</td><td>PG Admission List 2025-26</td><td>May 2026</td><td><a href="docs/pg/shalya/pg-admit-2025-26.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+        <tr><td>3</td><td>PG Guide List</td><td>May 2026</td><td><a href="docs/pg/shalya/pg-guide-list.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+        <tr><td>4</td><td>PG Shalya Tantra — Approval</td><td>May 2026</td><td><a href="docs/pg/shalya/pg-shalya-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
       </table>
-      <tbody id="sha-list">
-<tr><td>1</td><td><strong>PG Admission List 2024-25</strong></td><td>May 2026</td><td><a href="docs/pg/shalya/pg-admit-2024-25.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-<tr><td>2</td><td><strong>PG Admission List 2025-26</strong></td><td>May 2026</td><td><a href="docs/pg/shalya/pg-admit-2025-26.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-<tr><td>3</td><td><strong>PG Guide List</strong></td><td>May 2026</td><td><a href="docs/pg/shalya/pg-guide-list.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-<tr><td>4</td><td><strong>PG Shalya Tantra — Approval</strong></td><td>May 2026</td><td><a href="docs/pg/shalya/pg-shalya-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-</tbody>
     </div>
   </div>
 
@@ -556,25 +537,15 @@ footer strong{color:#fff;}
   <div id="pg-kaya" class="pg-panel">
     <div class="card" style="border-color:#f0d87a;">
       <h4 style="color:#7a5c00;">🩺 MD Kayachikitsa — Documents</h4>
-      <div class="guide">Upload files to <code>docs/pg/kaya/</code> then enter the document name and file path below and click Add.</div>
-      <div class="add-form">
-        <h5>➕ Add New Document</h5>
-        <div class="form-row">
-          <div class="form-group"><label>Document Name</label><input type="text" id="kay-name" placeholder="e.g., Dissertation Topics 2025-26"></div>
-          <div class="form-group"><label>File Path (in GitHub)</label><input type="text" id="kay-url" placeholder="docs/pg/kaya/filename.pdf"></div>
-          <button class="add-btn" onclick="addDoc('kaya')">+ Add</button>
-        </div>
-      </div>
-      <table class="dt"><tr><th>#</th><th>Document Name</th><th>Added On</th><th>View PDF</th><th></th></tr>
-        <tbody id="kay-list"></tbody>
+      <div class="guide">Upload files to <code>docs/pg/kaya/</code></div>
+      <table class="dt">
+        <tr><th>#</th><th>Document Name</th><th>Uploaded On</th><th>View PDF</th></tr>
+        <tr><td>1</td><td>PG Admission List 2024-25</td><td>May 2026</td><td><a href="docs/pg/kaya/pg-admit-2024-25.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+        <tr><td>2</td><td>PG Admission List 2025-26</td><td>May 2026</td><td><a href="docs/pg/kaya/pg-admit-2025-26.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+        <tr><td>3</td><td>PG Guide List</td><td>May 2026</td><td><a href="docs/pg/kaya/pg-guide-list.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
+        <tr><td>4</td><td>PG Kayachikitsa — Approval</td><td>May 2026</td><td><a href="docs/pg/kaya/pg-kayachikitsa-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td></tr>
       </table>
-<tbody id="kay-list">
-<tr><td>1</td><td><strong>PG Admission List 2024-25</strong></td><td>May 2026</td><td><a href="docs/pg/kaya/pg-admit-2024-25.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-<tr><td>2</td><td><strong>PG Admission List 2025-26</strong></td><td>May 2026</td><td><a href="docs/pg/kaya/pg-admit-2025-26.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-<tr><td>3</td><td><strong>PG Guide List</strong></td><td>May 2026</td><td><a href="docs/pg/kaya/pg-guide-list.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-<tr><td>4</td><td><strong>PG Kayachikitsa — Approval</strong></td><td>May 2026</td><td><a href="docs/pg/kaya/pg-kayachikitsa-approval.pdf" class="vbtn" target="_blank">📄 Open PDF</a></td><td></td></tr>
-</tbody>  
-  </div>
+    </div>
   </div>
 </div>
 
